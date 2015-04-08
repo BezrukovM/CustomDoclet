@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/javadocpatched.iml" filepath="$PROJECT_DIR$/javadocpatched.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CustomDoclet.iml" filepath="$PROJECT_DIR$/CustomDoclet.iml" />
     </modules>
   </component>
 </project>
