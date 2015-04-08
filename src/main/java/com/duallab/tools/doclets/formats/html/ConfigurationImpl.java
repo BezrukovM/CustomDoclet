@@ -189,7 +189,7 @@ public class ConfigurationImpl extends Configuration {
 
     /**
      * Constructor. Initialises resource for the
-     * {@link com.duallab.tools.doclets.MessageRetriever}.
+     * {@link com.duallab.tools.doclets.internal.toolkit.util.MessageRetriever}.
      */
     private ConfigurationImpl() {
         standardmessage = new MessageRetriever(this,

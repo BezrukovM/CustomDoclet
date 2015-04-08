@@ -145,7 +145,7 @@ public class DeprecatedAPIListBuilder {
     /**
      * Return the list of deprecated Doc objects of a given type.
      *
-     * @param the constant representing the type of list being returned.
+     * @param type constant representing the type of list being returned.
      */
     public List<Doc> getList(int type) {
         return deprecatedLists.get(type);

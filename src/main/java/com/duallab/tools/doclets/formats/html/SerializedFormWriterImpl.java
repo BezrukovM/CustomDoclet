@@ -42,7 +42,7 @@ public class SerializedFormWriterImpl extends SubWriterHolderWriter
 
     /**
      * @throws IOException
-     * @throws DocletAbortException
+                                                //* @throws DocletAbortException
      */
     public SerializedFormWriterImpl() throws IOException {
         super(ConfigurationImpl.getInstance(), FILE_NAME);

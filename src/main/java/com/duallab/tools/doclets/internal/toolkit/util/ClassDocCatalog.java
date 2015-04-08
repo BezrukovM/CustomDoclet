@@ -184,7 +184,7 @@ import com.duallab.tools.doclets.internal.toolkit.Configuration;
       /**
        * Return all of the classes specified on the command-line that
        * belong to the given package.
-       * @param packageDoc the package to return the classes for.
+       * @param pkgDoc the package to return the classes for.
        */
       public ClassDoc[] allClasses(PackageDoc pkgDoc) {
           return pkgDoc.isIncluded() ?

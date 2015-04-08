@@ -55,7 +55,7 @@ public abstract class AbstractDoclet {
 
     /**
      * Verify that the only doclet that is using this toolkit is
-     * {@value #TOOLKIT_DOCLET_NAME}.
+     * {@value //{}#TOOLKIT_DOCLET_NAME} .
      */
     private boolean isValidDoclet(AbstractDoclet doclet) {
         if (! doclet.getClass().getName().equals(TOOLKIT_DOCLET_NAME)) {

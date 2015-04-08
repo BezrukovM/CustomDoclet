@@ -85,12 +85,12 @@ public abstract class AbstractExecutableMemberWriter extends AbstractMemberWrite
      * @param member the member being linked to
      * @param tdSummary the content tree to which the link will be added
      */
-    protected void addSummaryLink(int context, ClassDoc cd, ProgramElementDoc member,
+    protected void addSummaryLink(int context, ClassDoc classDoc, ProgramElementDoc member,
             Content tdSummary) {
         ExecutableMemberDoc emd = (ExecutableMemberDoc)member;
         String name = emd.name();
         Content strong = HtmlTree.STRONG(new RawHtml(
-                writer.getDocLink(context, cd, (MemberDoc) emd,
+                writer.getDocLink(context, classDoc, (MemberDoc) emd,
                 name, false)));
         Content code = HtmlTree.CODE(strong);
         writer.displayLength = name.length();
@@ -105,10 +105,10 @@ public abstract class AbstractExecutableMemberWriter extends AbstractMemberWrite
      * @param member the member being linked to
      * @param linksTree the content tree to which the link will be added
      */
-    protected void addInheritedSummaryLink(ClassDoc cd,
+    protected void addInheritedSummaryLink(ClassDoc classDoc,
             ProgramElementDoc member, Content linksTree) {
         linksTree.addContent(new RawHtml(
-                writer.getDocLink(LinkInfoImpl.CONTEXT_MEMBER, cd, (MemberDoc) member,
+                writer.getDocLink(LinkInfoImpl.CONTEXT_MEMBER, classDoc, (MemberDoc) member,
                 member.name(), false)));
     }
 
@@ -138,7 +138,7 @@ public abstract class AbstractExecutableMemberWriter extends AbstractMemberWrite
      * Add all the parameters for the executable member.
      *
      * @param member the member to write parameters for.
-     * @param tree the content tree to which the parameters information will be added.
+     * @param htmltree the content tree to which the parameters information will be added.
      */
     protected void addParameters(ExecutableMemberDoc member, Content htmltree) {
         addParameters(member, true, htmltree);
@@ -149,7 +149,7 @@ public abstract class AbstractExecutableMemberWriter extends AbstractMemberWrite
      *
      * @param member the member to write parameters for.
      * @param includeAnnotations true if annotation information needs to be added.
-     * @param tree the content tree to which the parameters information will be added.
+     * @param htmltree the content tree to which the parameters information will be added.
      */
     protected void addParameters(ExecutableMemberDoc member,
             boolean includeAnnotations, Content htmltree) {

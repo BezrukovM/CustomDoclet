@@ -56,7 +56,7 @@ public interface EnumConstantWriter {
      * Get the enum constants documentation tree header.
      *
      * @param enumConstant the enum constant being documented
-     * @param enumConstantDetailsTree the content tree representing enum constant details
+     * @param enumConstantsDetailsTree the content tree representing enum constant details
      * @return content tree for the enum constant documentation header
      */
     public Content getEnumConstantsTreeHeader(FieldDoc enumConstant,

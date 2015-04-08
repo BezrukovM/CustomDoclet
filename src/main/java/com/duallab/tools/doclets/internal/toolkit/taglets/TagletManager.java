@@ -352,7 +352,7 @@ public class TagletManager {
         if (taglet instanceof Taglet) {
             checkTagName(((Taglet) taglet).getName());
         } else if (taglet instanceof com.duallab.tools.doclets.Taglet) {
-            com.duallab.tools.doclets.Taglet legacyTaglet = (com.sun.tools.doclets.Taglet) taglet;
+            com.duallab.tools.doclets.Taglet legacyTaglet = (com.duallab.tools.doclets.Taglet) taglet;
             customTags.remove(legacyTaglet.getName());
             customTags.put(legacyTaglet.getName(), new LegacyTaglet(legacyTaglet));
             checkTagName(legacyTaglet.getName());

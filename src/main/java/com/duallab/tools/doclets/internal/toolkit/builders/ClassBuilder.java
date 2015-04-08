@@ -373,8 +373,8 @@ public class ClassBuilder extends AbstractBuilder {
 
     /**
      * Build the property documentation.
-     *
-     * @param elements the XML elements that specify how a field is documented.
+     * @param node the XML element that specifies which components to document
+     * @param memberDetailsTree the content tree to which the documentation will be added
      */
     public void buildPropertyDetails(XMLNode node,
             Content memberDetailsTree) throws Exception {
